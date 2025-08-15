@@ -1,0 +1,96 @@
+```{css}
+/* A basic reset for consistency across browsers */
+* {
+    box-sizing: border-box; /* This makes sizing more intuitive by including padding and border in the element's total width and height */
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+/* Main Container - demonstrates a centered layout */
+.main-container {
+    max-width: 900px;
+    margin: 40px auto; /* Centers the container horizontally and adds vertical space */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section Styling - notice the use of padding for internal spacing */
+.hero-section {
+    background-color: #e0f7fa;
+    padding: 60px 40px; /* Generous padding to create space around the content */
+    text-align: center;
+    border: 2px solid #00796b; /* A solid border defines its boundary */
+    margin-bottom: 40px; /* Adds space outside the hero section, separating it from the cards */
+    border-radius: 8px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 1rem; /* Margin below the heading */
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem; /* Margin below the paragraph */
+}
+
+/* Styled Button */
+.styled-button {
+    background-color: #00796b;
+    color: #fff;
+    padding: 12px 24px; /* Padding for a good button size */
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #004d40;
+}
+
+/* Cards Section - uses flexbox for a simple grid layout */
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Creates space between the cards */
+    margin-bottom: 40px; /* Adds space below the entire cards section */
+}
+
+/* Individual Card Styling - a clear example of the Box Model */
+.card {
+    background-color: #e8f5e9;
+    padding: 20px; /* Padding adds internal space for the content */
+    border: 1px dashed #43a047; /* A dashed border shows the element's boundary */
+    margin: 10px; /* This margin adds space between the cards, separating them from each other */
+    border-radius: 8px;
+    text-align: center;
+    flex: 1; /* Allows the cards to grow and fill the available space */
+}
+
+.card h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cfd8dc;
+    color: #546e7a;
+    border-top: 1px solid #b0bec5;
+    border-radius: 0 0 8px 8px;
+}
